@@ -22,7 +22,7 @@ for i,food in pairs(workspace.Cakes:GetChildren()) do
 			else
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = food.CFrame + Vector3.new(0,2,0)
 				game.Players.LocalPlayer.Character.Humanoid.Jump = true
-				task.wait(.3)
+				task.wait(.1)
 			end
 		end)
 	end
