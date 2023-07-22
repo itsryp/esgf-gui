@@ -32,16 +32,16 @@ function LocalScript_ScriptfakeXD()
 		end
 		return require_fake(Object)
 	end
-	local safe = false
+	local safep = false
 	
 	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 		if key == _G.spkey then
-			if safe == false then
+			if safep == false then
 				_G.pos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-				safe = true
+				safep = true
 				game.Players.LocalPlayer.Character:MoveTo(script.Parent.Position + Vector3.new(0,50,0))
 			else
-				safe = false
+				safep = false
 				game.Players.LocalPlayer.Character:MoveTo(_G.pos)
 			end
 			
