@@ -35,7 +35,7 @@ function LocalScript_ScriptfakeXD()
 	local safe = false
 	
 	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
-		if key == "k" then
+		if key == _G.spkey then
 			if safe == false then
 				_G.pos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 				safe = true
